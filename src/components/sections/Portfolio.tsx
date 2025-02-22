@@ -12,42 +12,42 @@ const PortfolioShowcase = () => {
       category: "AI",
       description: "Advanced neural network infrastructure for enterprise applications",
       metrics: { growth: "140%", valuation: "$450M" },
-      image: "/api/placeholder/400/300"
+      image: "/images/e.jpg"
     },
     {
       name: "GenomeCure",
       category: "Biotech",
       description: "Pioneering gene therapy solutions for rare diseases",
       metrics: { growth: "85%", valuation: "$320M" },
-      image: "/api/placeholder/400/300"
+    image: "/images/b.jpg"
     },
     {
       name: "SolarFlow",
       category: "Clean Energy",
       description: "Revolutionary solar energy storage solutions",
       metrics: { growth: "120%", valuation: "$280M" },
-      image: "/api/placeholder/400/300"
+     image: "/images/c.jpg"
     },
     {
       name: "Quantum Computing Labs",
       category: "AI",
       description: "Quantum-inspired algorithms for optimization",
       metrics: { growth: "95%", valuation: "$220M" },
-      image: "/api/placeholder/400/300"
+     image: "/images/a.jpg"
     },
     {
       name: "BioMatrix",
       category: "Biotech",
       description: "AI-powered drug discovery platform",
       metrics: { growth: "110%", valuation: "$390M" },
-      image: "/api/placeholder/400/300"
+     image: "/images/e.jpg"
     },
     {
       name: "WindGrid",
       category: "Clean Energy",
       description: "Smart grid solutions for renewable energy",
       metrics: { growth: "75%", valuation: "$180M" },
-      image: "/api/placeholder/400/300"
+     image: "/images/c.jpg"
     }
   ];
 

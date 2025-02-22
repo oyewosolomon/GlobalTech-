@@ -30,7 +30,7 @@ const TeamShowcase: React.FC = () => {
         name: "Sarah Chen",
         role: "Chief Executive Officer",
         bio: "Former VP at Goldman Sachs with 15+ years in technology investment. Led $5B+ in successful exits.",
-        image: "/api/placeholder/300/300",
+        image: "/images/doc.jpg",
         social: {
           linkedin: "#",
           twitter: "#",
@@ -41,7 +41,7 @@ const TeamShowcase: React.FC = () => {
         name: "Dr. Michael Rahman",
         role: "Chief Technology Officer",
         bio: "PhD in Quantum Computing. Previously led R&D at IBM Quantum. 20+ patents in AI and quantum technologies.",
-        image: "/api/placeholder/300/300",
+        image: "/images/doc.jpg",
         social: {
           linkedin: "#",
           twitter: "#",
@@ -52,7 +52,7 @@ const TeamShowcase: React.FC = () => {
         name: "Elena Rodriguez",
         role: "Chief Investment Officer",
         bio: "Former Partner at Andreessen Horowitz. Specialized in deep tech investments with 12+ unicorn exits.",
-        image: "/api/placeholder/300/300",
+        image: "/images/doc.jpg",
         social: {
           linkedin: "#",
           twitter: "#",
@@ -65,7 +65,7 @@ const TeamShowcase: React.FC = () => {
         name: "Prof. James Wilson",
         role: "Scientific Advisor",
         bio: "Nobel Laureate in Physics. Pioneer in quantum computing and AI systems.",
-        image: "/api/placeholder/300/300",
+        image: "/images/doc.jpg",
         social: {
           linkedin: "#",
           twitter: "#",

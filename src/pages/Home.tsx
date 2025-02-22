@@ -70,11 +70,6 @@ export default function Home() {
 <GlobalPresence/>
 <TeamShowcase/>
 <ContactSection/>
-
-
-      <DemoSection/>
-      <ComplianceSection/>
-      {/* <SuccessStories/> */}
      
       <Footer/>
     </main>
