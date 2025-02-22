@@ -1,52 +1,65 @@
-import React, { useState } from 'react';
-import { 
-  Linkedin, 
-  Twitter, 
-  Youtube, 
+import React, { useState, FormEvent, ChangeEvent } from 'react';
+import {
+  Linkedin,
+  Twitter,
+  Youtube,
   ArrowRight,
   Mail,
   Globe,
-  Phone
+  Phone,
 } from 'lucide-react';
 
-const Footer = () => {
-  const [email, setEmail] = useState('');
+// Define types for footer links
+type FooterLink = {
+  name: string;
+  href: string;
+};
+
+type FooterLinks = {
+  company: FooterLink[];
+  solutions: FooterLink[];
+  resources: FooterLink[];
+  legal: FooterLink[];
+};
+
+const Footer: React.FC = () => {
+  const [email, setEmail] = useState<string>('');
   const currentYear = new Date().getFullYear();
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle newsletter subscription
     setEmail('');
   };
 
-  const footerLinks = {
+  const footerLinks: FooterLinks = {
     company: [
       { name: 'About Us', href: '#' },
       { name: 'Careers', href: '#' },
       { name: 'Our Team', href: '#' },
       { name: 'News', href: '#' },
-      { name: 'Contact', href: '#' }
+      { name: 'Contact', href: '#' },
     ],
     solutions: [
       { name: 'AI & Machine Learning', href: '#' },
       { name: 'Biotechnology', href: '#' },
       { name: 'Clean Energy', href: '#' },
       { name: 'Portfolio', href: '#' },
-      { name: 'Research', href: '#' }
+      { name: 'Research', href: '#' },
     ],
     resources: [
       { name: 'Blog', href: '#' },
       { name: 'Case Studies', href: '#' },
       { name: 'Events', href: '#' },
       { name: 'Press Kit', href: '#' },
-      { name: 'Annual Reports', href: '#' }
+      { name: 'Annual Reports', href: '#' },
     ],
     legal: [
       { name: 'Privacy Policy', href: '#' },
       { name: 'Terms of Service', href: '#' },
       { name: 'Cookie Policy', href: '#' },
-      { name: 'Disclaimer', href: '#' }
-    ]
+      { name: 'Disclaimer', href: '#' },
+    ],
   };
 
   return (
@@ -57,13 +70,15 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-6 md:mb-0">
               <h3 className="text-xl font-bold mb-2">Stay Updated</h3>
-              <p className="text-gray-400">Subscribe to our newsletter for the latest insights and updates</p>
+              <p className="text-gray-400">
+                Subscribe to our newsletter for the latest insights and updates
+              </p>
             </div>
             <form onSubmit={handleSubscribe} className="flex w-full md:w-auto">
               <input
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 className="flex-1 md:w-64 px-4 py-3 rounded-l-lg bg-gray-800 border border-gray-700 focus:outline-none focus:border-blue-500"
               />
@@ -86,7 +101,8 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-bold mb-6">GlobalTech Ventures</h2>
             <p className="text-gray-400 mb-6">
-              Transforming innovative ideas into world-changing companies through strategic investment and partnership.
+              Transforming innovative ideas into world-changing companies through
+              strategic investment and partnership.
             </p>
             <div className="space-y-3">
               <div className="flex items-center">
@@ -105,7 +121,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          {['company', 'solutions', 'resources'].map((category) => (
+          {(['company', 'solutions', 'resources'] as const).map((category) => (
             <div key={category}>
               <h3 className="text-lg font-semibold mb-6 capitalize">{category}</h3>
               <ul className="space-y-4">
