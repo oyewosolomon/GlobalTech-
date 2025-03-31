@@ -92,23 +92,9 @@ const ContactSection: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex items-start">
-                <Phone className="h-6 w-6 text-blue-600 mt-1 mr-4" />
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Call Us</h3>
-                  <p className="text-gray-600">+1 (415) 555-0123</p>
-                  <p className="text-gray-600">+44 (20) 7123 4567</p>
-                </div>
-              </div>
+            
 
-              <div className="flex items-start">
-                <MapPin className="h-6 w-6 text-blue-600 mt-1 mr-4" />
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">Visit Us</h3>
-                  <p className="text-gray-600">123 Innovation Drive</p>
-                  <p className="text-gray-600">San Francisco, CA 94105</p>
-                </div>
-              </div>
+              
             </div>
           </div>
 

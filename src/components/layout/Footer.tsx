@@ -113,10 +113,7 @@ const Footer: React.FC = () => {
                 <Mail className="h-5 w-5 mr-3 text-blue-500" />
                 <span className="text-gray-400">contact@globaltech.com</span>
               </div>
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 mr-3 text-blue-500" />
-                <span className="text-gray-400">+1 (415) 555-0123</span>
-              </div>
+             
             </div>
           </div>
 
